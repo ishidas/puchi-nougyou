@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "puchi-nougyou",
+    title: 'puchi-nougyou',
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass"],
+  plugins: ['gatsby-plugin-netlify-cms', 'gatsby-plugin-postcss', 'gatsby-plugin-sass'],
 };
