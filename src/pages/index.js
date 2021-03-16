@@ -9,6 +9,7 @@ import {
 import Home from './home'
 import About from './about'
 import Contact from './contact'
+import BlogOne from './blog1'
 import Logo from '../images/logo1.svg'
 // markup
 const IndexPage = () => {
@@ -42,6 +43,9 @@ const IndexPage = () => {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/blog1">
+              <BlogOne />
             </Route>
         </Switch>
         </div>
