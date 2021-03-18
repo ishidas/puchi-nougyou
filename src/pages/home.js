@@ -1,8 +1,13 @@
 import * as React from 'react'
 import imgManWithSoil from '../images/gabriel-jimenez-jin4W1HqgL4-unsplash.jpg'
 import { Link } from 'react-router-dom'
-const home = () => {
-
+const Home = () => {
+    let [ doc, setDocument ] = React.useState(null)
+    React.useEffect(() => {
+        if (window) {
+            setDocument(window.document)
+        }
+    }, [setDocument])
     return (
         <div>
             <section>
@@ -23,7 +28,7 @@ const home = () => {
                         </div>
                         <div className="p-8">
                             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">畑耕すの巻</div>
-                            <Link to="/blog1" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">簡単で単純作業に見えて意外と奥が深い。</Link>
+                            {!doc ? null : <Link to="/blog1" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">簡単で単純作業に見えて意外と奥が深い。</Link>}
                             <p className="mt-2 text-gray-500">畑の土を耕すって掘れば良い話だろうと簡単に考えている人が多いと思いますが、大間違い。耕すだけでもすごく色々な技術があると言うことを知りました。。。</p>
                         </div>
                     </div>
@@ -33,4 +38,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home

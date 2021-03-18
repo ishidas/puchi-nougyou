@@ -13,9 +13,14 @@ import BlogOne from './blog1'
 import Logo from '../images/logo1.svg'
 // markup
 const IndexPage = () => {
+  let [ doc, setDocument ] = React.useState(null)
+  React.useEffect(() => {
+        if (window) {
+          setDocument(window.document)
+        }
+    }, [setDocument])
   return (
-    <main className="text-gray-700">
-      <Helmet>
+        !doc ? <main></main> : <main className="text-gray-700"><Helmet>
         <meta charSet="utf-8" />
         <title>プチ農業</title>
       </Helmet>
@@ -50,7 +55,7 @@ const IndexPage = () => {
         </Switch>
         </div>
       </Router>
-    </main>
+      </main>
   )
 }
 

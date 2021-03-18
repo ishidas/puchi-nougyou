@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-const blogOne = () => {
+const BlogOne = () => {
 
     return (
         <div>Blog 1</div>
     )
 }
 
-export default blogOne
+export default BlogOne
