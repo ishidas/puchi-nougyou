@@ -1,6 +1,9 @@
 import * as React from 'react'
 import imgManWithSoil from '../images/gabriel-jimenez-jin4W1HqgL4-unsplash.jpg'
 import { Link } from 'react-router-dom'
+import ParallaxContainer from '../../components/ParallaxContainer'
+import Broccoli from '../images/foodism360-Gwak7T9evEk-unsplash.jpg'
+
 const Home = () => {
     let [ doc, setDocument ] = React.useState(null)
     React.useEffect(() => {
@@ -9,7 +12,7 @@ const Home = () => {
         }
     }, [setDocument])
     return (
-        <div>
+        <ParallaxContainer image={Broccoli} imageAlt='Broccolies in light green background'>
             <section>
                 <h1 className="text-red-300 font-bold ml-10 mt-10">
                     プチ農業の記録
@@ -24,7 +27,55 @@ const Home = () => {
                 <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                     <div className="md:flex">
                         <div className="md:flex-shrink-0">
-                            <img className="h-48 w-full object-cover md:w-48" src={imgManWithSoil} alt="Man looking at item at a store photo by Gabriel Jimenez on unsplash" />
+                            <img className="h-48 w-full object-cover md:w-48" src={imgManWithSoil} alt="Man with soil in his hands by Gabriel Jimenez on unsplash" />
+                        </div>
+                        <div className="p-8">
+                            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">畑耕すの巻</div>
+                            {!doc ? null : <Link to="/blog1" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">簡単で単純作業に見えて意外と奥が深い。</Link>}
+                            <p className="mt-2 text-gray-500">畑の土を耕すって掘れば良い話だろうと簡単に考えている人が多いと思いますが、大間違い。耕すだけでもすごく色々な技術があると言うことを知りました。。。</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                    <div className="md:flex">
+                        <div className="md:flex-shrink-0">
+                            <img className="h-48 w-full object-cover md:w-48" src={imgManWithSoil} alt="Man with soil in his hands by Gabriel Jimenez on unsplash" />
+                        </div>
+                        <div className="p-8">
+                            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">畑耕すの巻</div>
+                            {!doc ? null : <Link to="/blog1" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">簡単で単純作業に見えて意外と奥が深い。</Link>}
+                            <p className="mt-2 text-gray-500">畑の土を耕すって掘れば良い話だろうと簡単に考えている人が多いと思いますが、大間違い。耕すだけでもすごく色々な技術があると言うことを知りました。。。</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                    <div className="md:flex">
+                        <div className="md:flex-shrink-0">
+                            <img className="h-48 w-full object-cover md:w-48" src={imgManWithSoil} alt="Man with soil in his hands by Gabriel Jimenez on unsplash" />
+                        </div>
+                        <div className="p-8">
+                            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">畑耕すの巻</div>
+                            {!doc ? null : <Link to="/blog1" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">簡単で単純作業に見えて意外と奥が深い。</Link>}
+                            <p className="mt-2 text-gray-500">畑の土を耕すって掘れば良い話だろうと簡単に考えている人が多いと思いますが、大間違い。耕すだけでもすごく色々な技術があると言うことを知りました。。。</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                    <div className="md:flex">
+                        <div className="md:flex-shrink-0">
+                            <img className="h-48 w-full object-cover md:w-48" src={imgManWithSoil} alt="Man with soil in his hands by Gabriel Jimenez on unsplash" />
+                        </div>
+                        <div className="p-8">
+                            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">畑耕すの巻</div>
+                            {!doc ? null : <Link to="/blog1" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">簡単で単純作業に見えて意外と奥が深い。</Link>}
+                            <p className="mt-2 text-gray-500">畑の土を耕すって掘れば良い話だろうと簡単に考えている人が多いと思いますが、大間違い。耕すだけでもすごく色々な技術があると言うことを知りました。。。</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                    <div className="md:flex">
+                        <div className="md:flex-shrink-0">
+                            <img className="h-48 w-full object-cover md:w-48" src={imgManWithSoil} alt="Man with soil in his hands by Gabriel Jimenez on unsplash" />
                         </div>
                         <div className="p-8">
                             <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">畑耕すの巻</div>
@@ -34,7 +85,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </ParallaxContainer>
     )
 }
 
