@@ -14,7 +14,7 @@ import BlogOne from '../src/pages/blog1'
 const Navigation = () => {
     return (
         <Router>
-            <nav className='bg-gray-400'>
+            <nav className='bg-opacity-60'>
                 <ul className="flex">
                 <li className="flex-grow">
                     <Link to="/about" className="text-blue-900 hover:text-blue-800 inline-block text-center w-full mt-3">About</Link>
