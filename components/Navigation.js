@@ -16,14 +16,14 @@ const Navigation = () => {
         <Router>
             <nav className='bg-opacity-60'>
                 <ul className="flex">
-                <li className="flex-grow">
-                    <Link to="/about" className="text-blue-900 hover:text-blue-800 inline-block text-center w-full mt-3">About</Link>
+                <li className="flex-grow inline-flex items-center">
+                    <Link to="/about" className="text-blue-900 hover:text-blue-800 inline-block text-center w-full">About</Link>
                 </li>
                 <li className="flex-grow">
                     <Link to="/" className="text-blue-900 hover:text-blue-800 "><img className="w-12 my-0 m-auto mt-3" src={Logo} alt="logo"/></Link>
                 </li>
-                <li className="flex-grow">
-                    <Link to="/contact" className="text-blue-900 hover:text-blue-800 inline-block text-center w-full mt-3">Contact</Link>
+                <li className="flex-grow inline-flex items-center">
+                    <Link to="/contact" className="text-blue-900 hover:text-blue-800 inline-block text-center w-full">Contact</Link>
                 </li>
                 </ul>
             </nav>

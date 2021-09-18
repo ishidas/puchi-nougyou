@@ -4,3 +4,4 @@ public
 .env
 config
 .firebase/*
+firebase-key.json

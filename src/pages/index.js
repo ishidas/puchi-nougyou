@@ -13,15 +13,13 @@ const IndexPage = () => {
         }
     }, [setDocument])
   return (
-        !doc ? <main></main> : <ParallaxContainer image={Broccoli} imageAlt='Broccolies in light green background'>
-          <main className="text-gray-900">
-            <Helmet>
-              <meta charSet="utf-8" />
-              <title>プチ農業</title>
-            </Helmet>
-            <Navigation />
-          </main>
-      </ParallaxContainer>
+    !doc ? <main></main> : <main className="text-gray-900">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>プチ農業</title>
+        </Helmet>
+        <Navigation />
+      </main>
   )
 }
 
